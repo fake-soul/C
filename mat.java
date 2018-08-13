@@ -12,7 +12,7 @@ public class mat
 		int len=str.length();
 		if(len%rows!=0)
 		{
-			int diff=len%rows;
+			int diff=rows-len%rows;
 			len=len+diff;
 			for(int i=0;i<diff;i++)
 				str=str+'z';
